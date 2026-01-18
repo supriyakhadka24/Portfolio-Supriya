@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Tell the browser what language and character set we're using -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio-Supriya</title>
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Supriya's Portfolio</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <!-- Header section with navigation -->
+    <header>
+      <nav>
+        <h1>SUPRIYA KHADKA</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hobby">Hobbies</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- About section -->
+    <section id="about">
+      <div class="about-content">
+        <div class="about-image">
+          <img
+            src="images/wow.jpg"
+            alt="Supriya Khadka - Profile Photo"
+            class="profile-pic"
+          />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            My name is Supriya Khadka. I'm a passionate learner focused on web
+            development and building beautiful, functional websites.
+          </p>
+          <p>
+            I love exploring new technologies and constantly improving my
+            skills. When I'm not coding, you can find me enjoying music or
+            reading books.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies section -->
+    <section id="hobby">
+      <h2>My Hobbies</h2>
+      <div class="hobby-grid">
+        <div class="hobby-card">
+          <h3>🎵 Music</h3>
+          <p>
+            I enjoy listening to various music genres. It helps me stay focused
+            while coding!
+          </p>
+        </div>
+        <div class="hobby-card">
+          <h3>📚 Reading</h3>
+          <p>
+            I love reading books about technology, self-development, and science
+            fiction.
+          </p>
+        </div>
+        <div class="hobby-card">
+          <h3>💻 Coding</h3>
+          <p>
+            Creating solutions and building websites is both a skill and a
+            passion for me.
+          </p>
+        </div>
+        <div class="hobby-card">
+          <h3>🌳 Outdoors</h3>
+          <p>
+            Spending time in nature and exploring new places refreshes my mind.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Skills section -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Web Design</li>
+        <li>Problem Solving</li>
+        
+      </ul>
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p class="contact-intro">
+        Have a question or want to collaborate? I'd love to hear from you! Fill
+        out the form below and I'll get back to you soon.
+      </p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div id="thankYouMessage" class="thank-you-message">
+        <p>✓ Thank you for your message! I'll get back to you soon.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Supriya Khadka. All rights reserved.</p>
+    </footer>
+    <!-- Link to JavaScript file -->
+    <script src="javascript/script.js"></script>
   </body>
 </html>
